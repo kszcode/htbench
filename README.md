@@ -1,4 +1,4 @@
-#HTBench
+# HTBench
 
 Simple benchmark script. To be used a a boilerplate for more fance stuffs in the future.
 
