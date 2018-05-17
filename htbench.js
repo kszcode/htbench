@@ -61,9 +61,10 @@ const main = async () => {
     }
   }
 
-  for (let processed = 0; processed <
-  hits; processed += currentRate, currentRate++, currentRate = Math.min(
-    currentRate, maxRate)) {
+  for (let processed = 0; 
+       processed < hits; 
+       processed += currentRate, currentRate++,
+       currentRate = Math.min(currentRate, maxRate)) {
     await Promise.all(_.range(0, currentRate).map(async () => {
       let response = await fetch(url)
       let success = response.status < 400
